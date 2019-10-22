@@ -14,7 +14,7 @@
 		2132A18D2333D24E00555035 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2132A18C2333D24E00555035 /* Cell.swift */; };
 		2139378E2337910500CE58F3 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2139378D2337910500CE58F3 /* KeyboardViewController.swift */; };
 		213937922337910500CE58F3 /* keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2139378B2337910500CE58F3 /* keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		21393797233792A900CE58F3 /* keyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21393796233792A900CE58F3 /* keyboardView.xib */; };
+		21393797233792A900CE58F3 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21393796233792A900CE58F3 /* KeyboardView.xib */; };
 		2139379823379AC500CE58F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2154E3062293FEAB000D4004 /* Assets.xcassets */; };
 		21442838232C0B46009B3D71 /* Converters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21442837232C0B46009B3D71 /* Converters.swift */; };
 		2154E3002293FEA9000D4004 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2154E2FF2293FEA9000D4004 /* AppDelegate.swift */; };
@@ -24,15 +24,15 @@
 		2154E30A2293FEAB000D4004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2154E3082293FEAB000D4004 /* LaunchScreen.storyboard */; };
 		218CCBCC2337EEC9009FC6BD /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2139378D2337910500CE58F3 /* KeyboardViewController.swift */; };
 		21995C3523368C0E00735D9C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 21995C3423368C0E00735D9C /* README.md */; };
-		21D3017D2338B0E600BD16E3 /* keyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D3017C2338B0E600BD16E3 /* keyboardView.swift */; };
+		21D3017D2338B0E600BD16E3 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D3017C2338B0E600BD16E3 /* KeyboardView.swift */; };
 		21D3017E2338B2AB00BD16E3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E34339229E3743009DB60C /* Model.swift */; };
 		21D3017F2338B2AE00BD16E3 /* Converters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21442837232C0B46009B3D71 /* Converters.swift */; };
 		21D301802338B2D500BD16E3 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2132A18C2333D24E00555035 /* Cell.swift */; };
 		21D301812338B2D900BD16E3 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2132A1842333CE4600555035 /* Cell.xib */; };
 		21D301822338B2DB00BD16E3 /* Section.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2132A1862333CE5300555035 /* Section.xib */; };
 		21D301832338B2E000BD16E3 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2132A18A2333D24400555035 /* Section.swift */; };
-		21D301852338B54E00BD16E3 /* keyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21393796233792A900CE58F3 /* keyboardView.xib */; };
-		21D301862338B55200BD16E3 /* keyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D3017C2338B0E600BD16E3 /* keyboardView.swift */; };
+		21D301852338B54E00BD16E3 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21393796233792A900CE58F3 /* KeyboardView.xib */; };
+		21D301862338B55200BD16E3 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D3017C2338B0E600BD16E3 /* KeyboardView.swift */; };
 		21E3433A229E3743009DB60C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E34339229E3743009DB60C /* Model.swift */; };
 		51056202994E28F16EDC6CDE /* Pods_keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCFA4273231435D053E872A /* Pods_keyboard.framework */; };
 /* End PBXBuildFile section */
@@ -69,7 +69,7 @@
 		2139378B2337910500CE58F3 /* keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2139378D2337910500CE58F3 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		2139378F2337910500CE58F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21393796233792A900CE58F3 /* keyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = keyboardView.xib; sourceTree = "<group>"; };
+		21393796233792A900CE58F3 /* KeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
 		213937992337C13400CE58F3 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		21442837232C0B46009B3D71 /* Converters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converters.swift; sourceTree = "<group>"; };
 		214D1786235A140A00FDC77C /* Logbook */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Logbook; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		2154E3092293FEAB000D4004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2154E30B2293FEAB000D4004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21995C3423368C0E00735D9C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		21D3017C2338B0E600BD16E3 /* keyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardView.swift; sourceTree = "<group>"; };
+		21D3017C2338B0E600BD16E3 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		21E34339229E3743009DB60C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		698DEC87A9D417744B444780 /* Pods-keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keyboard.debug.xcconfig"; path = "Target Support Files/Pods-keyboard/Pods-keyboard.debug.xcconfig"; sourceTree = "<group>"; };
 		7FC98ABEF88AB57231785474 /* Pods-keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keyboard.release.xcconfig"; path = "Target Support Files/Pods-keyboard/Pods-keyboard.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,8 +116,8 @@
 			children = (
 				2139378F2337910500CE58F3 /* Info.plist */,
 				2139378D2337910500CE58F3 /* KeyboardViewController.swift */,
-				21393796233792A900CE58F3 /* keyboardView.xib */,
-				21D3017C2338B0E600BD16E3 /* keyboardView.swift */,
+				21393796233792A900CE58F3 /* KeyboardView.xib */,
+				21D3017C2338B0E600BD16E3 /* KeyboardView.swift */,
 			);
 			path = keyboard;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 				2139379823379AC500CE58F3 /* Assets.xcassets in Resources */,
 				21D301822338B2DB00BD16E3 /* Section.xib in Resources */,
 				21D301812338B2D900BD16E3 /* Cell.xib in Resources */,
-				21393797233792A900CE58F3 /* keyboardView.xib in Resources */,
+				21393797233792A900CE58F3 /* KeyboardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +289,7 @@
 			files = (
 				21995C3523368C0E00735D9C /* README.md in Resources */,
 				2154E30A2293FEAB000D4004 /* LaunchScreen.storyboard in Resources */,
-				21D301852338B54E00BD16E3 /* keyboardView.xib in Resources */,
+				21D301852338B54E00BD16E3 /* KeyboardView.xib in Resources */,
 				2132A1852333CE4600555035 /* Cell.xib in Resources */,
 				2154E3072293FEAB000D4004 /* Assets.xcassets in Resources */,
 				2132A1872333CE5300555035 /* Section.xib in Resources */,
@@ -373,7 +373,7 @@
 				21D301802338B2D500BD16E3 /* Cell.swift in Sources */,
 				21D301832338B2E000BD16E3 /* Section.swift in Sources */,
 				21D3017F2338B2AE00BD16E3 /* Converters.swift in Sources */,
-				21D3017D2338B0E600BD16E3 /* keyboardView.swift in Sources */,
+				21D3017D2338B0E600BD16E3 /* KeyboardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21D301862338B55200BD16E3 /* keyboardView.swift in Sources */,
+				21D301862338B55200BD16E3 /* KeyboardView.swift in Sources */,
 				2154E3022293FEA9000D4004 /* ViewController.swift in Sources */,
 				2132A18D2333D24E00555035 /* Cell.swift in Sources */,
 				2154E3002293FEA9000D4004 /* AppDelegate.swift in Sources */,

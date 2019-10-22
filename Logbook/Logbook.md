@@ -100,6 +100,15 @@ Interesting! Good to know. Best now is to break it down into small chunks to inv
 
 Four tasks as a 'to do'.
 
-## Mon 21 Oct
+## Tues 22 Oct
 
-Does this work?
+Crying. Massive pains with Git. I did the good thing by branching when I wanted to branch. Then, when I wanted to come back to an original version, I just went with checking it out and making changes. Poor me. I have insufficient practise and knowledge of Git, and you can guarantee that after this sprint, I'll be studying it meticulously. For now, I've gone with ditching my old .git, it lives in a private repo. Access to it at any time upon your request.
+
+Catchups: Had these four tasks/investigations on Sat, got back to it on Mon. Realised I could bypass this whole thing by still using my initial `KeyboardView.xib` and simply attaching SF Symbol images to it. So keeping on.
+
+- Fixing Git 2:10 (!)
+
+My next tasks are:
+- Funky, nice, addictive UI. Simple as that.
+
+I also want to send a test through the App Store, to test my submission to see it passes its checks.
