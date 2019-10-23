@@ -2,16 +2,16 @@ import UIKit
 
 class Cell: UICollectionViewCell {
     
-    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var button: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.bringSubviewToFront(textLabel)
-        self.contentView.backgroundColor = .lightGray
+        self.bringSubviewToFront(button)
+//        self.contentView.backgroundColor = .lightGray
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        self.textLabel.text = nil
+        self.button.setTitle(nil, for: .normal)
     }
 }

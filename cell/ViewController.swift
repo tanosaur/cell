@@ -72,7 +72,8 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! Cell
-        cell.textLabel.text = String(cellsModel.hoursShown[indexPath.row])
+        cell.button.setTitle(String(cellsModel.hoursShown[indexPath.row]), for: .normal)
+            
         return cell
     }
     
@@ -97,6 +98,7 @@ extension ViewController: UICollectionViewDataSource {
 
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("hello")
         var dateComponent = absoluteTimeToDateComponent(cellsModel.daysShown[indexPath.section], TimeZone.autoupdatingCurrent)
         dateComponent.hour = cellsModel.hoursShown[indexPath.row]
         dateComponent.minute = 0

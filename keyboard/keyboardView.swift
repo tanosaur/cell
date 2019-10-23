@@ -54,7 +54,7 @@ extension KeyboardView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! Cell
-        cell.textLabel.text = String(cellsModel.hoursShown[indexPath.row])
+        cell.button.setTitle(String(cellsModel.hoursShown[indexPath.row]), for: .normal)
         return cell
     }
     
