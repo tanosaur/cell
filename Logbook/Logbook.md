@@ -108,7 +108,13 @@ Catchups: Had these four tasks/investigations on Sat, got back to it on Mon. Rea
 
 - Fixing Git 2:10 (!)
 
-My next tasks are:
-- Funky, nice, addictive UI. Simple as that.
+## Wed 23 Oct
 
-I also want to send a test through the App Store, to test my submission to see it passes its checks.
+As I come to completing this build, I remember:
+- I build for myself
+- The product is for me
+- Utility over profit
+
+I don't necessarily need tens of testers. I know myself.
+
+
