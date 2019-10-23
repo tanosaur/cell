@@ -119,7 +119,7 @@ I don't necessarily need tens of testers. I know myself.
 
 1:21 'An app for me'
 
-![Update](resources/23oct/screenshot.mov)
+![Video screenshot of keyboard to date](resources/23oct/screenshot.mov)
 
 OK! Basically I realised that now, I'm at the stage where the build is pretty much good to go. I've got a small handle on the:
 - haptics
