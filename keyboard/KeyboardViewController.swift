@@ -3,6 +3,7 @@ import UIKit
 class KeyboardViewController: UIInputViewController {
 
     var keyboardView: KeyboardView!
+    var previousSummary = ""
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -10,7 +11,7 @@ class KeyboardViewController: UIInputViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let nib = UINib(nibName: "keyboardView", bundle: nil)
+        let nib = UINib(nibName: "KeyboardView", bundle: nil)
         let objects = nib.instantiate(withOwner: nil, options: nil)
         keyboardView = objects.first as? KeyboardView
         guard let inputView = inputView else { return }
@@ -30,7 +31,9 @@ class KeyboardViewController: UIInputViewController {
     }
     
     @objc func sendSummary() {
-        textDocumentProxy.insertText(keyboardView.summary)
+        guard let summary = keyboardView.summary, summary != previousSummary else { return }
+        self.previousSummary = summary
+        textDocumentProxy.insertText(summary)
     }
     
     override func textWillChange(_ textInput: UITextInput?) {

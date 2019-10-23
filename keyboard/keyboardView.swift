@@ -11,12 +11,12 @@ class KeyboardView: UIView {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var sendButton: UIButton!
 
-    
     override func awakeFromNib() {
         super.awakeFromNib()
 
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.allowsMultipleSelection = true
         
 //        sendButton.transform = CGAffineTransform(rotationAngle: -CGFloat.pi/4)
         
@@ -36,7 +36,7 @@ class KeyboardView: UIView {
 
 extension KeyboardView: ModelDelegate {
     func timesUpdated (_ times: [Date]) {
-        summary = summaryFromTimes(times, model.theirTimeZone)
+        self.summary = summaryFromTimes(times, model.theirTimeZone)
     }
 }
 
@@ -85,6 +85,16 @@ extension KeyboardView: UICollectionViewDelegate {
         dateComponent.nanosecond = 0
         let absoluteTime = dateComponentToAbsoluteTime(dateComponent)
         model.addATime(absoluteTime)
+        AudioServicesPlaySystemSound(1519)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        var dateComponent = absoluteTimeToDateComponent(cellsModel.daysShown[indexPath.section], TimeZone.autoupdatingCurrent)
+        dateComponent.hour = cellsModel.hoursShown[indexPath.row]
+        dateComponent.minute = 0
+        dateComponent.nanosecond = 0
+        let absoluteTime = dateComponentToAbsoluteTime(dateComponent)
+        model.removeATime(absoluteTime)
         AudioServicesPlaySystemSound(1519)
     }
 }

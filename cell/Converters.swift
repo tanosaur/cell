@@ -66,5 +66,6 @@ func summaryFromTimes(_ absoluteTimes: [Date], _ theirTimeZone: TimeZone? = nil)
         let theirMessage = makeMessage(absoluteTimes, theirTimeZone!)
         summary.append(theirMessage)
     }
+    print(summary)
     return summary
 }

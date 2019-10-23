@@ -62,19 +62,19 @@ I'm excited to build this UI. I still dislike that I haven't resolved the keyboa
 
 Different send buttons
 
-![Different send buttons](images/18oct/different-send-buttons.png)
+![Different send buttons](resources/18oct/different-send-buttons.png)
 
 Different cells
 
-![Different cells](images/18oct/different-cells.png)
+![Different cells](resources/18oct/different-cells.png)
 
 Thicker - loved this in initial design, when many, too much
 
-![Thicker](images/18oct/thicker.png)
+![Thicker](resources/18oct/thicker.png)
 
 Thinner
 
-![Thinner](images/18oct/thinner.png)
+![Thinner](resources/18oct/thinner.png)
 
 Fine to do mocks, want energy to go into the live rendition, and practical thought.
 - Numbers? Hours?
@@ -117,4 +117,15 @@ As I come to completing this build, I remember:
 
 I don't necessarily need tens of testers. I know myself.
 
-Test
+1:21 'An app for me'
+
+![Update](resources/23oct/screenshot.mov)
+
+OK! Basically I realised that now, I'm at the stage where the build is pretty much good to go. I've got a small handle on the:
+- haptics
+- button states
+- all pieces functionally working
+
+Now, it's delivering product A, B, C, D. Which version? In this period, I want people around me. I want to test thoroughly, imaginatively.
+
+

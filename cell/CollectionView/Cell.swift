@@ -6,8 +6,10 @@ class Cell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.bringSubviewToFront(textLabel)
-        self.contentView.backgroundColor = .lightGray
+//        self.bringSubviewToFront(textLabel)
+        self.contentView.backgroundColor = .clear
+        self.selectedBackgroundView = UIView()
+        self.selectedBackgroundView?.backgroundColor = .systemBlue
     }
     
     override func prepareForReuse() {

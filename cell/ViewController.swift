@@ -4,6 +4,8 @@ class ViewController: UIViewController {
     
     let model = Model()
     let cellsModel = CellsModel()
+    
+    let impactGenerator = UIImpactFeedbackGenerator(style: .medium)
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var previewLabel: UILabel!
@@ -19,13 +21,13 @@ class ViewController: UIViewController {
         
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.allowsMultipleSelection = true
         
         let cellNib = UINib(nibName: "Cell", bundle: nil)
         collectionView.register(cellNib, forCellWithReuseIdentifier: "Cell")
         
         let sectionNib = UINib(nibName: "Section", bundle: nil)
         collectionView.register(sectionNib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "Section")
-        
     }
 
 }
@@ -103,6 +105,21 @@ extension ViewController: UICollectionViewDelegate {
         dateComponent.nanosecond = 0
         let absoluteTime = dateComponentToAbsoluteTime(dateComponent)
         model.addATime(absoluteTime)
+        impactGenerator.prepare()
+        impactGenerator.impactOccurred()
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! Cell
+//        print(cell.isSelected)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        var dateComponent = absoluteTimeToDateComponent(cellsModel.daysShown[indexPath.section], TimeZone.autoupdatingCurrent)
+        dateComponent.hour = cellsModel.hoursShown[indexPath.row]
+        dateComponent.minute = 0
+        dateComponent.nanosecond = 0
+        let absoluteTime = dateComponentToAbsoluteTime(dateComponent)
+        model.removeATime(absoluteTime)
+        impactGenerator.prepare()
+        impactGenerator.impactOccurred()
     }
 }
 
