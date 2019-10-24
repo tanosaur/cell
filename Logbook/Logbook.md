@@ -133,7 +133,7 @@ Now, it's delivering product A, B, C, D. Which version? In this period, I want p
 cwm/cell updates:
 -  Functionally quite there, strong
 - Branches, focuses:
-    - UI
+    - UI/UX
     - Tab bar
     - Virality/message element
     - Keep in mind all ‘first test’ - we might make mistakes, still important to test the first product with integrity - not lose elements because shortcutting too much
@@ -143,5 +143,9 @@ Life update:
 - Feeling pace, bring in other elements, also an income element
 - Day or two a week while getting this up concentrating on each these things? As an idea
 
+Reference images
+
+![Reference image for UI/UX and tab bar](resources/24oct/i-ii.jpg)
+![Reference image for virality/message element](resources/24oct/iii.jpg)
 
 
