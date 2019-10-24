@@ -108,7 +108,7 @@ Catchups: Had these four tasks/investigations on Sat, got back to it on Mon. Rea
 
 - Fixing Git 2:10 (!)
 
-## Wed 23 Oct
+## Wed 23 Oct, I: Easy Buttons
 
 As I come to completing this build, I remember:
 - I build for myself
@@ -127,5 +127,21 @@ OK! Basically I realised that now, I'm at the stage where the build is pretty mu
 - all pieces functionally working
 
 Now, it's delivering product A, B, C, D. Which version? In this period, I want people around me. I want to test thoroughly, imaginatively.
+
+## Thurs 24 Oct with Node II
+
+cwm/cell updates:
+-  Functionally quite there, strong
+- Branches, focuses:
+    - UI
+    - Tab bar
+    - Virality/message element
+    - Keep in mind all ‘first test’ - we might make mistakes, still important to test the first product with integrity - not lose elements because shortcutting too much
+    - The Brexit Cabinet app - React programming, fast, App Store familiarity
+    
+Life update:
+- Feeling pace, bring in other elements, also an income element
+- Day or two a week while getting this up concentrating on each these things? As an idea
+
 
 

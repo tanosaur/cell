@@ -17,6 +17,7 @@
 		21393797233792A900CE58F3 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21393796233792A900CE58F3 /* KeyboardView.xib */; };
 		2139379823379AC500CE58F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2154E3062293FEAB000D4004 /* Assets.xcassets */; };
 		21442838232C0B46009B3D71 /* Converters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21442837232C0B46009B3D71 /* Converters.swift */; };
+		21457E7B2360B17100E66B96 /* PreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21457E7A2360B17100E66B96 /* PreviewView.xib */; };
 		2154E3002293FEA9000D4004 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2154E2FF2293FEA9000D4004 /* AppDelegate.swift */; };
 		2154E3022293FEA9000D4004 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2154E3012293FEA9000D4004 /* ViewController.swift */; };
 		2154E3052293FEA9000D4004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2154E3032293FEA9000D4004 /* Main.storyboard */; };
@@ -72,6 +73,7 @@
 		21393796233792A900CE58F3 /* KeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
 		213937992337C13400CE58F3 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		21442837232C0B46009B3D71 /* Converters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converters.swift; sourceTree = "<group>"; };
+		21457E7A2360B17100E66B96 /* PreviewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewView.xib; sourceTree = "<group>"; };
 		214D1786235A140A00FDC77C /* Logbook */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Logbook; sourceTree = "<group>"; };
 		2154E2FC2293FEA9000D4004 /* cell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2154E2FF2293FEA9000D4004 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				2139378D2337910500CE58F3 /* KeyboardViewController.swift */,
 				21393796233792A900CE58F3 /* KeyboardView.xib */,
 				21D3017C2338B0E600BD16E3 /* KeyboardView.swift */,
+				21457E7A2360B17100E66B96 /* PreviewView.xib */,
 			);
 			path = keyboard;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			files = (
 				2139379823379AC500CE58F3 /* Assets.xcassets in Resources */,
 				21D301822338B2DB00BD16E3 /* Section.xib in Resources */,
+				21457E7B2360B17100E66B96 /* PreviewView.xib in Resources */,
 				21D301812338B2D900BD16E3 /* Cell.xib in Resources */,
 				21393797233792A900CE58F3 /* KeyboardView.xib in Resources */,
 			);
