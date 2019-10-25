@@ -4,12 +4,6 @@
 
 ## Summary of decisions
 
-### 24 Oct 2019
-Next focuses:
-- UI
-- Tab bar/time zones
-- Virality/message
-
 ### Building for myself
 *Build for utility, thus profit*
 
