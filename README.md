@@ -2,7 +2,7 @@
 
 ## [Logbook](Logbook/Logbook.md)
 
-## Summary of decisions, weekly meets
+## Summary of decisions
 
 ### 24 Oct 2019
 Next focuses:
@@ -11,19 +11,21 @@ Next focuses:
 - Virality/message
 
 ### Building for myself
-Lalalala
+*Build for utility, thus profit*
 
 ### Test with integrity
-Lalalala
+*To honor the value hypothesis, for example: if the hypothesis is 'that the graphical 'Cell' interface is intuitive, addictive', test with this interface (and not earlier)*
 
 ### Swift, not React Native
-Lalalala
+*iOS custom keyboards are better in Swift*
 
 ### Custom keyboard, not iMessage app
-Lalalala
+*Building cross-platform for Android & iOS first - my parents have Android phones*
 
 ### Simplifications
-Lalalala - iOS until proof of virality, then Android - User inputs other person's time zone until database (no permissions yet)
+*Until resource,*
+- *iOS then Android*
+- *User manually inputs the other person's time zone, then explore databases/permissions to automatically get the other person's time zone*
 
 ### Time awareness
-Lalalala 
+*Recording all activities & their time via Toggl*

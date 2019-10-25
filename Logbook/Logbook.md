@@ -149,3 +149,6 @@ Reference images
 ![Reference image for virality/message element](resources/24oct/iii.jpg)
 
 
+## Fri 25 Oct
+
+Homepage refresh!
