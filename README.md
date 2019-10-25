@@ -14,7 +14,7 @@ Next focuses:
 *Build for utility, thus profit*
 
 ### Test with integrity
-*To honor the value hypothesis, for example: if the hypothesis is 'that the graphical 'Cell' interface is intuitive, addictive', test with this interface (and not earlier)*
+*To honor the value hypothesis, for example: if the hypothesis is 'cell is successful because its graphical interface is intuitive, addictive', test with this interface (and not earlier)*
 
 ### Swift, not React Native
 *iOS custom keyboards are better in Swift*
@@ -23,7 +23,7 @@ Next focuses:
 *Building cross-platform for Android & iOS first - my parents have Android phones*
 
 ### Simplifications
-*Until resource,*
+*Until resource:*
 - *iOS then Android*
 - *User manually inputs the other person's time zone, then explore databases/permissions to automatically get the other person's time zone*
 
