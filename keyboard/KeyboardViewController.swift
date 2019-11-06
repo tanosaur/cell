@@ -2,36 +2,36 @@ import UIKit
 
 class KeyboardViewController: UIInputViewController {
 
-    var keyboardView: KeyboardView!
-    var previousSummary = ""
+    var cellView: CellView!
+    var previewView: PreviewView!
     
-    override func updateViewConstraints() {
-        super.updateViewConstraints()
-    }
+    var previousSummary = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let nib = UINib(nibName: "KeyboardView", bundle: nil)
+        let nib = UINib(nibName: "CellView", bundle: nil)
         let objects = nib.instantiate(withOwner: nil, options: nil)
-        keyboardView = objects.first as? KeyboardView
+        cellView = objects.first as? CellView
         guard let inputView = inputView else { return }
-        inputView.addSubview(keyboardView)
-        keyboardView.translatesAutoresizingMaskIntoConstraints = false
+        inputView.addSubview(cellView)
+        cellView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            keyboardView.leftAnchor.constraint(equalTo: inputView.leftAnchor),
-            keyboardView.topAnchor.constraint(equalTo: inputView.topAnchor),
-            keyboardView.rightAnchor.constraint(equalTo: inputView.rightAnchor),
-            keyboardView.bottomAnchor.constraint(equalTo: inputView.bottomAnchor),
+            cellView.leftAnchor.constraint(equalTo: inputView.leftAnchor),
+            cellView.topAnchor.constraint(equalTo: inputView.topAnchor),
+            cellView.rightAnchor.constraint(equalTo: inputView.rightAnchor),
+            cellView.bottomAnchor.constraint(equalTo: inputView.bottomAnchor),
             ])
 
-        keyboardView.setNextKeyboardVisible(true) // MANUAL OVERRIDE DURING DEVELOP
+        cellView.setNextKeyboardVisible(true) // MANUAL OVERRIDE DURING DEVELOP
 //        keyboardView.setNextKeyboardVisible(needsInputModeSwitchKey)
-        keyboardView.nextKeyboardButton.addTarget(self, action: #selector(advanceToNextInputMode), for: .allTouchEvents)
-        keyboardView.sendButton.addTarget(self, action: #selector(sendSummary), for: .allTouchEvents)
+        cellView.nextKeyboardButton.addTarget(self, action: #selector(advanceToNextInputMode), for: .allTouchEvents)
+        cellView.sendButton.addTarget(self, action: #selector(sendSummary), for: .allTouchEvents)
+        
+        
     }
     
     @objc func sendSummary() {
-        guard let summary = keyboardView.summary, summary != previousSummary else { return }
+        guard let summary = cellView.summary, summary != previousSummary else { return }
         self.previousSummary = summary
         textDocumentProxy.insertText(summary)
     }

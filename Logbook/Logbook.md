@@ -149,6 +149,6 @@ Reference images
 ![Reference image for virality/message element](resources/24oct/iii.jpg)
 
 
-## Fri 25 Oct
+## Wed 6 Nov 
 
-Homepage refresh!
+Ah, letting it go. Life in its ebbs and flows.

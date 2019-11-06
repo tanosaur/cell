@@ -1,7 +1,7 @@
 import UIKit
 import AudioToolbox
 
-class KeyboardView: UIView {
+class CellView: UIView {
     let model = Model()
     let cellsModel = CellsModel()
     var summary: String!
@@ -34,13 +34,13 @@ class KeyboardView: UIView {
     }
 }
 
-extension KeyboardView: ModelDelegate {
+extension CellView: ModelDelegate {
     func timesUpdated (_ times: [Date]) {
         self.summary = summaryFromTimes(times, model.theirTimeZone)
     }
 }
 
-extension KeyboardView: UICollectionViewDataSource {
+extension CellView: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return cellsModel.daysShown.count
@@ -77,7 +77,7 @@ extension KeyboardView: UICollectionViewDataSource {
     }
 }
 
-extension KeyboardView: UICollectionViewDelegate {
+extension CellView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         var dateComponent = absoluteTimeToDateComponent(cellsModel.daysShown[indexPath.section], TimeZone.autoupdatingCurrent)
         dateComponent.hour = cellsModel.hoursShown[indexPath.row]
@@ -99,7 +99,7 @@ extension KeyboardView: UICollectionViewDelegate {
     }
 }
 
-extension KeyboardView: UICollectionViewDelegateFlowLayout {
+extension CellView: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
